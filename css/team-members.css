@@ -1,65 +1,51 @@
-/* Team Members Section styles */
-.team-members {
-  padding: 50px 0;
-  overflow: hidden; /* Hide overflow for automatic scrolling */
-}
-
-.section-title {
-  text-align: center;
-}
-
-.team-members-container {
+.team-section {
   display: flex;
-  animation: scroll-left 15s linear infinite; /* Automatically scroll left */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-member {
-  flex: 0 0 calc(33.333% - 20px); /* Adjust width for each team member */
-  margin: 0 10px;
-}
-
-.team-member-photo {
-  width: 100%;
-  height: 400px; /* Adjust height as needed */
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-}
-
-.team-member-details {
-  background-color: #f9f9f9;
+  width: 250px; /* Adjust this value to your desired width */
+  text-align: center;
+  margin: 20px;
   padding: 20px;
-  border-radius: 8px;
-  margin-top: 10px;
-}
-
-.team-member-name {
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.team-member-role {
-  margin: 5px 0;
-  font-style: italic;
-}
-
-.team-member-description {
-  margin-top: 10px;
-  max-height: 200px;
-}
-
-.team-members-container:hover,
-.team-member:hover,
-.team-member:hover .team-member-details {
-  animation-play-state: paused; /* Pause the scrolling animation on hover */
+  background-color: #daf4d4;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.21);
+  transition: transform 0.3s ease-in-out;
 }
 
 .team-member:hover {
-  transform: scale(1.1); /* Enlarge the team member on hover */
-  z-index: 1; /* Bring the hovered team member to the front */
+  transform: translateY(-10px);
 }
 
-@keyframes scroll-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
+
+.team-member h4 {
+  /* font-weight: 400; */
+  margin: 0;
+}
+
+.team-member .role {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* .fa { */
+  /* font-size: 24px; */
+  /* margin: 0 10px; */
+  /* color: #000; */
+  /* transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; */
+  /* text-decoration: none; */
+/* } */
+
+/* .team-member:hover .fa { */
+  /* transform: scale(1.2); */
+  /* color: #007AFF; */
+/* } */

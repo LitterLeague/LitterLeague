@@ -1,0 +1,259 @@
+body {
+	  background-color: #daf4d4; /* Light green color */
+	}
+
+	@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+	
+		body{
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	
+	
+	
+	<!-- landing section -->
+		.hero {
+	    background-image: url("images/Landing_img.jpg");
+		background-size: cover;
+	}
+
+
+	.hero h2 {
+		font: 72px "Amatic SC", sans-serif;
+		text-shadow: 2px 2px rgba(0, 0, 0, 0.3); 	
+		margin-bottom: 15px;
+		text-align:center;
+	}
+
+	.hero h3 {
+		font: 28px "Raleway", sans-serif;
+		font-weight: 300;
+		text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+		margin-bottom: 40px;
+		text-align:center;
+	}
+
+	.hero a.btn {
+		padding: 20px 46px;
+	}
+
+	.hero-content-area {
+		opacity: 0;
+		margin-top: 100px;
+		animation: 1s slidefade 1s forwards;
+	}
+
+	@keyframes slidefade {
+		100% {
+			opacity: 1;
+			margin: 0;
+		}
+	}
+
+	@media (max-width: 800px) {
+		.hero {
+			min-height: 600px;
+		}
+
+		.hero h1 {
+			font-size: 48px;
+		}
+
+		.hero h3 {
+			font-size: 24px;
+		}
+
+		.hero a.btn {
+			padding: 15px 40px;
+		}
+	}
+	
+	<!-- Footer section-->
+	footer {
+	  background-color: #daf4d4;
+	  color: #000;
+	  padding: 20px 0;
+	  text-align: center;
+	}
+
+	.social-links {
+	  list-style: none;
+	  padding: 0;
+	  margin: 0;
+	  display: flex;
+	  justify-content: center;
+	}
+
+	.social-links li {
+	  margin: 0 10px;
+	}
+
+	.social-links li a {
+	  color: #000;
+	  font-size: 24px;
+	  text-decoration: none;
+	}
+  
+	<!-- impact section style -->
+    /* .impact-section { */
+	  /* background-color: #daf4d4; !important; /* Change background color to white */ */
+	/* } */
+
+    /* .impact-item { */
+      /* text-align: center; */
+      /* margin-bottom: 30px; */
+    /* } */
+
+    /* .impact-circle { */
+      /* display: inline-block; */
+      /* width: 150px; */
+      /* height: 150px; */
+      /* line-height: 150px; */
+      /* border-radius: 50%; */
+      /* color: #000; */
+      /* font-size: 24px; */
+      /* font-weight: bold; */
+      /* text-align: center; */
+      /* box-shadow: 0 8px 15px rgba(0, 128, 0, 0.5); */
+      /* transition: box-shadow 0.3s ease-in-out; */
+      /* position: relative; */
+    /* } */
+
+    /* .impact-circle:hover { */
+      /* box-shadow: 0 8px 15px rgba(60, 60, 60, 1); */
+    /* } */
+
+    /* .impact-circle:hover .count { */
+      /* color: #000; */
+    /* } */
+
+    /* .count { */
+      /* position: absolute; */
+      /* top: 50%; */
+      /* left: 50%; */
+      /* transform: translate(-50%, -50%); */
+      /* transition: color 0.3s ease-in-out; */
+    /* } */
+	
+	<!-- Impact section styling-->
+	/* Custom styles for the impact section */
+  .impact-section {
+    text-align: center;
+  }
+
+  .impact-item {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .impact-item:hover {
+    transform: scale(1.1);
+  }
+
+  .impact-item i {
+    font-size: 5em; /* Adjust icon size */
+    color: #4CAF50; /* Icon color */
+  }
+
+  .impact-item p {
+    margin-top: 10px;
+    font-size: 18px; /* Adjust text size */
+    color: #555; /* Text color */
+  }
+	
+	
+	<!-- section marging -->
+	.section {
+		margin-bottom: 30px; /* Adjust the value as needed */
+	}
+	
+	<!-- back to top-->
+	.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+/* Featured & Events Section styles */
+.featured-events {
+  padding: 50px 0;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+
+ .image-container {
+    width: 200px; /* Set the width of the image container */
+    height: 200px; /* Set the height of the image container */
+    overflow: hidden; /* Hide any overflow */
+    position: relative; /* Position the image and text within the container */
+    border-radius: 10px; /* Add some border radius for a rounded appearance */
+    margin-bottom: 20px; /* Add some bottom margin for spacing between rows */
+  }
+
+  .image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image behaves as a block element */
+  }
+
+  .image-container .text-overlay {
+    position: absolute; /* Position the text overlay relative to the container */
+    top: 50%; /* Align the text vertically in the middle */
+    left: 50%; /* Align the text horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Set the text color */
+    text-align: center; /* Center-align the text */
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  }
+
+  .image-container:hover .text-overlay {
+    opacity: 1; /* Show the text when hovering over the container */
+  }
+
+.landing-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+ .video-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+    .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Hide carousel indicators */
+  .carousel-indicators {
+    display: none;
+  }

@@ -1,0 +1,33 @@
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ .row {
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 10px; /* Adjust spacing between image and text */
+        }
+
+        .column p {
+            margin: 0;
+            font-size: 16px; /* Adjust font size */
+            color: #333; /* Adjust text color */
+        }
+
